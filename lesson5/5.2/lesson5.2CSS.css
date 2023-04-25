@@ -1,0 +1,98 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.cards {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.block {
+    width: 321px;
+    height: 491px;
+    background: rgba(217, 217, 217, 0.3);
+    border: 4px solid #554C4C;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    position: relative;
+
+
+}
+.cards .block:nth-child(2){
+    border-color: #65856E;
+}
+
+.block h1{
+    font-size: 40px;
+    margin: 0;
+}
+
+.block p {
+    margin: 0;
+}
+
+.cards .block:first-child::before{
+    position: absolute;
+    content: "";
+
+    width: 100px;
+    height: 100px;
+    top: -55px;
+    right: 105px;
+
+    background: #FFFFFF;
+    border: 4px solid #554C4C;
+    border-radius: 50%;
+
+    background-image: url("Ds3 Tool.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .block:nth-child(2)::before{
+    position: absolute;
+    content: "";
+
+    width: 100px;
+    height: 100px;
+    top: -55px;
+    right: 105px;
+
+    background: #FFFFFF;
+    border: 4px solid #65856E;
+    border-radius: 50%;
+
+    background-image: url("Chessboard.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .block:last-child::before{
+    position: absolute;
+    content: "";
+
+    width: 100px;
+    height: 100px;
+    top: -55px;
+    right: 105px;
+
+    background: #FFFFFF;
+    border: 4px solid #554C4C;
+    border-radius: 50%;
+
+    background-image: url("Battle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
