@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.warp{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.wrap2{
+    height: 66.666%;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap3{
+    height: 100%;
+    width: 75%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.block_a{
+    height: 33.333%;
+    width: 100%;
+
+    background: pink;
+}
+
+.block_b{
+    height: 50%;
+    width: 100%;
+
+    background: aquamarine;
+}
+
+.block_c, .block_d, .block_e{
+    height: 50%;
+    width: 33.333%;
+    background: blue;
+}
+
+.block_f{
+    height: 100%;
+    width: 25%;
+
+    background: brown;
+}
