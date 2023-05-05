@@ -1,6 +1,6 @@
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 
-const arr1 = [1,2,3,'as',true,6,7,8,9,10];
+const arr1 = [1, 2, 3, 'as', true, 6, 7, 8, 9, 10];
 for (const arr1Element of arr1) {
     console.log(arr1Element);
 }
@@ -110,14 +110,14 @@ const mass = [
 ];
 
 for (const mass1 of mass) {
-    console.log('Password:',mass1.password);
+    console.log('Password:', mass1.password);
 }
 
 //- Є змінна х, якій ви надаєте довільне числове значення.
 // Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
 
 let m = -3;
-if  (m!==0) {
+if (m !== 0) {
     console.log('Вірно');
 } else {
     console.log('Не вірно')
@@ -127,13 +127,13 @@ if  (m!==0) {
 // (в першу, другу, третю или четверту частину години).
 
 const time = 33;
-if (time<15) {
+if (time < 15) {
     console.log('1 quoter')
-} else if (time>=15&&time<30) {
+} else if (time >= 15 && time < 30) {
     console.log('2 quoter');
-} else if (time>=30&&time<45) {
+} else if (time >= 30 && time < 45) {
     console.log('3 quoter')
-} else if (time>=45&&time<60) {
+} else if (time >= 45 && time < 60) {
     console.log('4 quoter')
 } else {
     console.log('incorrect number')
@@ -142,20 +142,20 @@ if (time<15) {
 //- У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
 
 const day = 13;
-if (day<=10){
+if (day <= 10) {
     console.log('1 декада');
-}else if (day<=20){
-    console.log('2 декада') ;
-}else if(day<=31){
+} else if (day <= 20) {
+    console.log('2 декада');
+} else if (day <= 31) {
     console.log('3 декада');
-}else{
+} else {
     console.log('incorrect number');
 }
 
 //- Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
 
 const i = 2;
-switch (i){
+switch (i) {
     case 1:
         console.log('Monday');
         break;
@@ -186,12 +186,12 @@ switch (i){
 // Також потрібно врахувати коли введені рівні числа.
 
 const a = 2;
-const b=3;
-if (a===b){
+const b = 3;
+if (a === b) {
     console.log('числа рівні');
-} else if (a>b){
+} else if (a > b) {
     console.log(a);
-} else if (a<b){
+} else if (a < b) {
     console.log(b);
 }
 
@@ -199,8 +199,8 @@ if (a===b){
 // за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
 
 let x = false;
-if (x===false||x===0||x===-0||x===0n||x===''||x===""||x===``||x===null||x===undefined){
-    x="default";
+if (x === false || x === 0 || x === -0 || x === 0n || x === '' || x === "" || x === `` || x === null || x === undefined) {
+    x = "default";
     console.log(x);
 }
 
@@ -217,20 +217,19 @@ let coursesAndDurationArray = [
 if (coursesAndDurationArray[0].monthDuration > 5) {
     console.log("Супер")
 }
-if(coursesAndDurationArray[1].monthDuration > 5){
+if (coursesAndDurationArray[1].monthDuration > 5) {
     console.log("Супер")
 }
-if(coursesAndDurationArray[2].monthDuration > 5){
+if (coursesAndDurationArray[2].monthDuration > 5) {
     console.log("Супер")
 }
-if(coursesAndDurationArray[3].monthDuration > 5){
+if (coursesAndDurationArray[3].monthDuration > 5) {
     console.log("Супер")
 }
-if(coursesAndDurationArray[4].monthDuration > 5){
+if (coursesAndDurationArray[4].monthDuration > 5) {
     console.log("Супер")
 }
-if(coursesAndDurationArray[5].monthDuration > 5){
+if (coursesAndDurationArray[5].monthDuration > 5) {
     console.log("Супер")
 }
-
 
