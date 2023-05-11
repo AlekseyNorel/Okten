@@ -103,10 +103,10 @@ printArray2(qwe)
 // - створити функцію яка повертає найменьше число з масиву
 
 function lessNumberFromArray(arr) {
-    let num = -Infinity;
+    let num = Infinity;
 
     for (const element of arr) {
-        if (num < element) {
+        if (num > element) {
             num = element;
         }
     }
