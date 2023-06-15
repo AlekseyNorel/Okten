@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+ }
+ 
+ body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: lightcyan;
+    width: 100%;
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+ .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+ }
+ .user {
+    width: 50%;
+    padding-bottom: 10px;
+    background-color: lightgrey;
+    border: 1px solid black;    
+ }
+
+ .user p {
+    padding: 10px 0;
+ }
+
+ .user a {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 30px;
+    background-color:lightblue;
+    color: black;
+ }
+ .userDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+ }
+
+ .item {
+    padding: 5px 0;
+ }
+
+ .btn {
+    font-size: 35px;
+    cursor: pointer;
+
+    width: 90%;
+    padding: 10px;
+
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color:lightblue;
+    color: black;
+ }
+ .detailsItem {
+    background-color:lightyellow;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+ }
+
+ .detailsItem a {
+    margin-top: auto;
+    color: rgb(181, 29, 151);
+    font-size: larger;
+    width: fit-content;
+    align-self: center;
+    padding-top: 5px;
+ }
+
+ .comments {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+ }
+
+ .commentsItem {
+    width: 25%;
+    border: 1px solid black;
+    background-color:lightyellow;
+ }
+ 
+ .commentsItem p {
+    padding: 10px;
+    
+ }

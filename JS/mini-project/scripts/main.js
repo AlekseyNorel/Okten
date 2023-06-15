@@ -24,10 +24,12 @@
 const URL = 'https://jsonplaceholder.typicode.com/users';
 
 fetch(URL).then(response => response.json()).then(users => {
-    const divWrap = document.createElement('div');
-    document.body.appendChild(divWrap);
+    const section = document.createElement('section');
+    section.className = 'wrap';
+    document.body.appendChild(section);
     for (const user of users) {
         const div = document.createElement('div');
+        div.className = 'user';  
         const p = document.createElement('p');
         const detailsLink = document.createElement('a');
 
@@ -35,7 +37,7 @@ fetch(URL).then(response => response.json()).then(users => {
         detailsLink.textContent = 'Details';
         p.innerText = `ID: ${user.id}\n NAME: ${user.name}`;
 
-        divWrap.appendChild(div);
+        section.appendChild(div);
         div.append(p,detailsLink);
 
         detailsLink.onclick = function () {

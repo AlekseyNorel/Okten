@@ -8,24 +8,27 @@ const COMMENTS = `${POST}/comments`;
 
 fetch(POST).then(response => response.json()).then(post => {
 
-    const divWrap = document.createElement('div');
-    document.body.appendChild(divWrap);
+    const section = document.createElement('section');
+    document.body.appendChild(section);
     for (const key in post) {
         let p = document.createElement('p');
+        p.className = 'item';
         p.innerText = `${key}: ${post[key]}`
-        divWrap.appendChild(p);
+        section.appendChild(p);
     }
 
     fetch(COMMENTS).then(response => response.json()).then(comments => {
-        const divWrap = document.createElement('div');
-        document.body.appendChild(divWrap);
+        const section = document.createElement('section');
+        section.className = 'comments';
+        document.body.appendChild(section);
         for (const comment of comments) {
-            const divWrap2 = document.createElement('div');
-            divWrap.appendChild(divWrap2);
+            const div = document.createElement('div');
+            div.className = 'commentsItem';
+            section.appendChild(div);
             for (const commentKey in comment) {
                 const p = document.createElement('p');
                 p.innerText = `${commentKey}: ${comment[commentKey]}`
-                divWrap2.appendChild(p);
+                div.appendChild(p);
             }
         }
     });
